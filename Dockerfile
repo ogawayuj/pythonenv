@@ -5,6 +5,7 @@ USER root
 # 以降の RUN, CMD コマンドで使われる作業ディレクトリを指定する 今回はcoomposeで指定
 WORKDIR /app
 ADD ./requirements.txt /app/
+ADD ./app/data /app/data/
 
 RUN apt-get update
 RUN apt-get -y install locales && \

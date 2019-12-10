@@ -1,1 +1,6 @@
 app/requirements.txt
+.azuredatastudio
+app/data/
+app/test.py
+
+

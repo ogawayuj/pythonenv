@@ -9,3 +9,8 @@ services:
       - .:/app
     ports: 
       - '4000:80'
+    networks:
+      - my-first-network
+networks:
+  my-first-network:
+      external: true
